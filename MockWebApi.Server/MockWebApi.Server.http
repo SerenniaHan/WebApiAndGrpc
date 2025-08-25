@@ -1,0 +1,7 @@
+@MockWebApi_Server_HostAddress = https://localhost:7207
+
+
+GET {{MockWebApi_Server_HostAddress}}/generate:5
+Accept: application/json
+
+###

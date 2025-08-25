@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.64.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MockGrpc.Protos\MockGrpc.Protos.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="..\MockGrpc.Protos\Protos\greet.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+</Project>
